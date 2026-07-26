@@ -5,4 +5,8 @@ module com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_231090
 
     opens com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525 to javafx.fxml;
     exports com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525;
+    exports TollPlazaManager;
+    opens TollPlazaManager to javafx.fxml;
+    exports TollPlazaBoothOperator;
+    opens TollPlazaBoothOperator to javafx.fxml;
 }
