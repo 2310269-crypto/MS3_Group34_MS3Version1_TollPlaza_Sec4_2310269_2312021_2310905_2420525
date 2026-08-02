@@ -1,4 +1,0 @@
-package com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.user7;
-
-public class mainPageController {
-}
