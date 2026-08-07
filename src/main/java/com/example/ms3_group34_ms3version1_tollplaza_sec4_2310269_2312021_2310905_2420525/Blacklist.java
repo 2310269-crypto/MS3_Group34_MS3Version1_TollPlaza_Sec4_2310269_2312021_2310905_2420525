@@ -4,15 +4,14 @@ import java.time.LocalDate;
 
 public class Blacklist {
 
-    private String driverName,driverLicense,vehicleLicense,vehicleType,reasons;
-    private int driverNumber;
+    private String driverName,driverLicense,vehicleLicense,vehicleType,reasons,driverNumber;
     private LocalDate dateRegistered;
 
-    public Blacklist(LocalDate dateRegistered, String driverLicense, String driverName, int driverNumber, String reasons, String vehicleLicense, String vehicleType) {
+
+    public Blacklist(LocalDate dateRegistered, String driverLicense, String driverName, String driverNumber, String reasons, String vehicleLicense, String vehicleType) {
         this.dateRegistered = dateRegistered;
         this.driverLicense = driverLicense;
         this.driverName = driverName;
-        this.driverNumber = driverNumber;
         this.reasons = reasons;
         this.vehicleLicense = vehicleLicense;
         this.vehicleType = vehicleType;
@@ -30,7 +29,7 @@ public class Blacklist {
         return driverName;
     }
 
-    public int getDriverNumber() {
+    public String getDriverNumber() {
         return driverNumber;
     }
 
