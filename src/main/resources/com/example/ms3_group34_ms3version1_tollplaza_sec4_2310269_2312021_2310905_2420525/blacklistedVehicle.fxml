@@ -15,8 +15,8 @@
             <TableColumn fx:id="driverLicenseTC" prefWidth="90.66670227050781" text="Driver License" />
             <TableColumn fx:id="driverNumerTC" prefWidth="90.0" text="Driver Number" />
             <TableColumn fx:id="vehicleTypeTC" prefWidth="82.0" text="Vehicle Type" />
-            <TableColumn fx:id="blacklistReasonTC" prefWidth="100.66667683919275" text="Reasons " />
-            <TableColumn fx:id="dateRegisteredTC" prefWidth="100.66667683919275" text="Date Registered" />
+            <TableColumn fx:id="blacklistReasonTC" prefWidth="110.66668701171875" text="Reasons " />
+            <TableColumn fx:id="dateRegisteredTC" prefWidth="112.6666259765625" text="Date Registered" />
         </columns>
       </TableView>
    </children>

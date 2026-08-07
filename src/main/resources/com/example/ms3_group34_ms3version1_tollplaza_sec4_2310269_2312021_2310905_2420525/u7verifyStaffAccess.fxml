@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.u7verifyStaffAccessController">
+   <children>
+      <Text layoutX="28.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verify Staff Access" wrappingWidth="209.47003173828125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="47.0" layoutY="98.0" text="Staff ID :" />
+      <Label layoutX="47.0" layoutY="136.0" text="Staff Name :" />
+      <Label layoutX="56.0" layoutY="200.0" text="Staff Name :" />
+      <Label layoutX="56.0" layoutY="222.0" text="Staff ID :" />
+      <Label layoutX="56.0" layoutY="244.0" text="Staff Contact Number :" />
+      <Label layoutX="55.0" layoutY="265.0" text="Staff Assigned Role :" />
+      <Label layoutX="55.0" layoutY="288.0" text="Shift Status :" />
+      <Label fx:id="u7StaffNameLabel" layoutX="133.0" layoutY="200.0" />
+      <Label fx:id="u7staffIDLabel" layoutX="107.0" layoutY="222.0" />
+      <Label fx:id="u7staffIDNumberLabel" layoutX="181.0" layoutY="244.0" />
+      <Label fx:id="u7staffAssignedRoleLabel" layoutX="167.0" layoutY="265.0" />
+      <Label fx:id="u7staffShiftstatusLabel" layoutX="129.0" layoutY="288.0" />
+      <TextField fx:id="u7staffIDTF" layoutX="99.0" layoutY="94.0" />
+      <TextField fx:id="u7staffNameTF" layoutX="120.0" layoutY="132.0" />
+   </children>
+</AnchorPane>

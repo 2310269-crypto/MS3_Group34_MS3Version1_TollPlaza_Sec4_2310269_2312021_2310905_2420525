@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="546.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.u7manageBlacklistedVehiclesController">
    <children>
       <Label layoutX="32.0" layoutY="24.0" prefHeight="30.0" prefWidth="267.0" text="Manage Blacklisted Vehicles">
@@ -19,7 +18,7 @@
       </Label>
       <Label layoutX="41.0" layoutY="70.0" text="Driver Name" />
       <Label layoutX="40.0" layoutY="103.0" text="Driver License Number" />
-      <Label layoutX="40.0" layoutY="135.0" text="Vehicle License Number" />
+      <Label layoutX="38.0" layoutY="135.0" text="Vehicle License Number" />
       <Label layoutX="351.0" layoutY="103.0" text="Vehicle Type" />
       <Label layoutX="352.0" layoutY="132.0" text="Reason" />
       <TextField fx:id="driverNameTF" layoutX="178.0" layoutY="66.0" />
@@ -28,10 +27,10 @@
       <TextField fx:id="vehicleTpeTF" layoutX="487.0" layoutY="98.0" prefHeight="11.0" prefWidth="149.0" />
       <TextField fx:id="reasonTF" layoutX="487.0" layoutY="128.0" prefHeight="47.0" prefWidth="149.0" />
       <Label layoutX="350.0" layoutY="70.0" text="Date Registered" />
-      <TableView fx:id="blacklistVehicleTV" editable="true" layoutX="7.0" layoutY="216.0" prefHeight="325.0" prefWidth="711.0">
+      <TableView fx:id="blacklistVehicleTV" editable="true" layoutX="7.0" layoutY="267.0" prefHeight="274.0" prefWidth="711.0">
          <columns>
             <TableColumn fx:id="vehicleLicenseTC" prefWidth="106.6666589975357" text="Vehicle License " />
-            <TableColumn fx:id="driveNameTC" prefWidth="117.3332748413086" text="Driver Name" />
+            <TableColumn fx:id="driverNameTC" prefWidth="117.3332748413086" text="Driver Name" />
             <TableColumn fx:id="driverLicenseTC" prefWidth="90.66670227050781" text="Driver License" />
             <TableColumn fx:id="driverNumberTC" prefWidth="90.0" text="Driver Number" />
             <TableColumn fx:id="vehicleTypeTC" prefWidth="82.0" text="Vehicle Type" />
@@ -40,6 +39,8 @@
          </columns>
       </TableView>
       <DatePicker fx:id="dateRegisteredTF" layoutX="481.0" layoutY="66.0" />
-      <Button fx:id="addToListBOA" layoutX="297.0" layoutY="167.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="114.0" text="Add to List" />
+      <Button layoutX="308.0" layoutY="213.0" mnemonicParsing="false" onAction="#addToListBOA" prefHeight="37.0" prefWidth="114.0" text="Add to List" />
+      <Label layoutX="36.0" layoutY="166.0" text="Driver Contact Number" />
+      <TextField fx:id="driverLicenseTF1" layoutX="179.0" layoutY="162.0" prefHeight="11.0" prefWidth="149.0" />
    </children>
 </AnchorPane>

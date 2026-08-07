@@ -1,15 +1,18 @@
 package com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class user8MainPageController {
-    @javafx.fxml.FXML
+    @FXML
     private Button U8lostReceiptsBOA;
-    @javafx.fxml.FXML
+    @FXML
     private Label U8laneNumberLabel;
+    @FXML
+    private ComboBox <String> U8vehicleTypeCB;
 
     public Label getU8fareLabel() {
         return U8fareLabel;
@@ -35,10 +38,6 @@ public class user8MainPageController {
         U8customerProfileUpdateBOA = u8customerProfileUpdateBOA;
     }
 
-    public void setU8locationCB(ComboBox u8locationCB) {
-        U8locationCB = u8locationCB;
-
-    }
 
     public void setU8lostReceiptsBOA(Button u8lostReceiptsBOA) {
         U8lostReceiptsBOA = u8lostReceiptsBOA;
@@ -52,39 +51,33 @@ public class user8MainPageController {
         U8vipVehiclesBOA = u8vipVehiclesBOA;
     }
 
-    @javafx.fxml.FXML
+    public void setU8locationCB(ComboBox<String> u8locationCB) {
+        U8locationCB = u8locationCB;
+    }
+
+    @FXML
     private Label U8fareLabel;
-    @javafx.fxml.FXML
+    @FXML
     private Button U8customerProfileRegisterBOA;
-    @javafx.fxml.FXML
+    @FXML
     private Button U8customerProfileUpdateBOA;
-    @javafx.fxml.FXML
+    @FXML
     private Button U8customerComplaintBOA;
 
 
 
 
-    public user8MainPageController(Button u8createReportBOA, Button u8customerComplaintBOA, Button u8customerProfileRegisterBOA, Button u8customerProfileUpdateBOA, Label u8fareLabel, Label u8laneNumberLabel, ComboBox u8locationCB, Button u8lostReceiptsBOA, Button u8tollRefundsBOA, Button u8vipVehiclesBOA) {
-        U8createReportBOA = u8createReportBOA;
-        U8customerComplaintBOA = u8customerComplaintBOA;
-        U8customerProfileRegisterBOA = u8customerProfileRegisterBOA;
-        U8customerProfileUpdateBOA = u8customerProfileUpdateBOA;
-        U8fareLabel = u8fareLabel;
-        U8laneNumberLabel = u8laneNumberLabel;
-        U8locationCB = u8locationCB;
-        U8lostReceiptsBOA = u8lostReceiptsBOA;
-        U8tollRefundsBOA = u8tollRefundsBOA;
-        U8vipVehiclesBOA = u8vipVehiclesBOA;
-    }
 
-    @javafx.fxml.FXML
+    @FXML
     private Button U8createReportBOA;
-    @javafx.fxml.FXML
+    @FXML
     private Button U8tollRefundsBOA;
-    @javafx.fxml.FXML
+    @FXML
     private Button U8vipVehiclesBOA;
-    @javafx.fxml.FXML
-    private ComboBox U8locationCB;
+    @FXML
+    private ComboBox <String> U8locationCB;
+
+
 
     @Override
     public String toString() {
@@ -101,6 +94,61 @@ public class user8MainPageController {
                 ", U8locationCB=" + U8locationCB +
                 '}';
     }
-    public float
-}
+    @FXML
+    public  void initialize() {
+        U8vehicleTypeCB.getItems().addAll("Car", "Bike", "Bus", "Truck");
+        U8locationCB.getItems().addAll("Mawa", "Janjira");
+
+        U8vehicleTypeCB.setOnAction(e -> outputLaneaAndFare());
+        U8locationCB.setOnAction(e -> outputLaneaAndFare());
+    }
+        private void outputLaneaAndFare () {
+            String vehicle = U8vehicleTypeCB.getValue();
+            String location = U8locationCB.getValue();
+
+            if (vehicle == null || location == null) return;
+
+            U8laneNumberLabel.setText(outputLaneNumber(vehicle, location));
+            U8fareLabel.setText(outputFare(vehicle, location) + " tk");
+
+        }
+
+
+        private String outputLaneNumber(String vehicle,String location) {
+            String lane = null;
+                if (location.equals("Mawa")) {
+                    lane = "1";
+                }
+                if (location.equals("Janjira")) {
+                    lane = "3";
+                }
+                return lane;
+            }
+
+        private String outputFare(String vehicle,String location) {
+            String fare = null;
+                if (vehicle.equals("Car")) {
+                    fare = "750";
+                }
+                if (vehicle.equals("Bus")) {
+                    fare = "1900";
+                }
+                if (vehicle.equals("Bike")) {
+                    fare = "100";
+                }
+                if (vehicle.equals("Truck")) {
+                    fare = "3500";
+                }
+
+
+                return fare;
+            }}
+
+
+
+
+
+
+
+
 
