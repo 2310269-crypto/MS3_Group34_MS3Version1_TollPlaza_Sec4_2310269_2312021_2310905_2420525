@@ -1,6 +1,6 @@
 package TollPlazaBoothOperator;
 
-public class ProcessElectronicTollCollectionViewController
+public class OperatorDashboardViewController
 {
     @javafx.fxml.FXML
     public void initialize() {

@@ -1,6 +1,6 @@
 package TollPlazaManager;
 
-public class ReconcileAndApproveDailyRevenueViewController
+public class RevenueReconciliationViewController
 {
     @javafx.fxml.FXML
     public void initialize() {

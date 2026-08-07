@@ -1,7 +1,10 @@
 package TollPlazaManager;
 
-public class ConfigureLaneandTollRateSettingsViewController
+public class ManagerDashboardViewController
 {
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+
+}
