@@ -10,26 +10,10 @@ import java.io.IOException;
 
 
 public class user7MainPageController {
-    @javafx.fxml.FXML
-    private Button U7suspeciousVehicleBOA;
-    @javafx.fxml.FXML
-    private Button U7blacklistedVehiclesBOA;
-    @javafx.fxml.FXML
-    private Button U7incidentReportBOA;
-    @javafx.fxml.FXML
-    private Button U7emergencyBOA;
-    @javafx.fxml.FXML
-    private Button U7staffAccessBOA;
-    @javafx.fxml.FXML
-    private Button U7reportBOA;
-    @javafx.fxml.FXML
-    private Button U7cctvBOA;
-    @javafx.fxml.FXML
-    private Button U7unauthorizedLaneAccessBOA;
 
 
-
-    public void goToManageBlacklist(ActionEvent actionEvent) throws IOException {
+    @javafx.fxml.FXML
+    public void U7blacklistedVehiclesBOA(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("u7manageBlacklistedVehicles.fxml"));
         Scene scene = new Scene(loader.load());
 
@@ -37,5 +21,33 @@ public class user7MainPageController {
         stage.setScene(scene);
         stage.setTitle("Manage Blacklisted Vehicles");
         stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void U7incidentReportBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7suspeciousVehicleBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7staffAccessBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7emergencyBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7reportBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7cctvBOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void U7unauthorizedLaneAccessBOA(ActionEvent actionEvent) {
     }
 }

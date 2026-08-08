@@ -8,8 +8,6 @@ import javafx.scene.control.TextField;
 
 public class user8MainPageController {
     @FXML
-    private Button U8lostReceiptsBOA;
-    @FXML
     private Label U8laneNumberLabel;
     @FXML
     private ComboBox <String> U8vehicleTypeCB;
@@ -22,34 +20,6 @@ public class user8MainPageController {
         return U8laneNumberLabel;
     }
 
-    public void setU8createReportBOA(Button u8createReportBOA) {
-        U8createReportBOA = u8createReportBOA;
-    }
-
-    public void setU8customerComplaintBOA(Button u8customerComplaintBOA) {
-        U8customerComplaintBOA = u8customerComplaintBOA;
-    }
-
-    public void setU8customerProfileRegisterBOA(Button u8customerProfileRegisterBOA) {
-        U8customerProfileRegisterBOA = u8customerProfileRegisterBOA;
-    }
-
-    public void setU8customerProfileUpdateBOA(Button u8customerProfileUpdateBOA) {
-        U8customerProfileUpdateBOA = u8customerProfileUpdateBOA;
-    }
-
-
-    public void setU8lostReceiptsBOA(Button u8lostReceiptsBOA) {
-        U8lostReceiptsBOA = u8lostReceiptsBOA;
-    }
-
-    public void setU8tollRefundsBOA(Button u8tollRefundsBOA) {
-        U8tollRefundsBOA = u8tollRefundsBOA;
-    }
-
-    public void setU8vipVehiclesBOA(Button u8vipVehiclesBOA) {
-        U8vipVehiclesBOA = u8vipVehiclesBOA;
-    }
 
     public void setU8locationCB(ComboBox<String> u8locationCB) {
         U8locationCB = u8locationCB;
@@ -57,23 +27,8 @@ public class user8MainPageController {
 
     @FXML
     private Label U8fareLabel;
-    @FXML
-    private Button U8customerProfileRegisterBOA;
-    @FXML
-    private Button U8customerProfileUpdateBOA;
-    @FXML
-    private Button U8customerComplaintBOA;
 
 
-
-
-
-    @FXML
-    private Button U8createReportBOA;
-    @FXML
-    private Button U8tollRefundsBOA;
-    @FXML
-    private Button U8vipVehiclesBOA;
     @FXML
     private ComboBox <String> U8locationCB;
 
@@ -142,7 +97,36 @@ public class user8MainPageController {
 
 
                 return fare;
-            }}
+            }
+
+    @FXML
+    public void U8lostReceiptsBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8customerProfileRegisterBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8customerProfileUpdateBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8createReportBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8customerComplaintBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8tollRefundsBOA(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void U8vipVehiclesBOA(ActionEvent actionEvent) {
+    }
+}
 
 
 

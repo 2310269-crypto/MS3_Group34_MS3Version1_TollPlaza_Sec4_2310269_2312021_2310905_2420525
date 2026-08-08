@@ -18,13 +18,13 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Button fx:id="U8customerComplaintBOA" layoutX="30.0" layoutY="81.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="147.0" text="Customer complaints" />
-      <Button fx:id="U8tollRefundsBOA" layoutX="30.0" layoutY="124.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="147.0" text="Toll refunds" />
-      <Button fx:id="U8lostReceiptsBOA" layoutX="195.0" layoutY="80.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="147.0" text="Lost Receipts" />
-      <Button fx:id="U8vipVehiclesBOA" layoutX="195.0" layoutY="125.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="147.0" text="VIP Vehicles" />
-      <Button fx:id="U8createReportBOA" layoutX="397.0" layoutY="90.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="149.0" text="Create Report" />
-      <Button fx:id="U8customerProfileUpdateBOA" layoutX="427.0" layoutY="293.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" text="Update" />
-      <Button fx:id="U8customerProfileRegisterBOA" layoutX="427.0" layoutY="248.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="123.0" text="Register " />
+      <Button layoutX="30.0" layoutY="81.0" mnemonicParsing="false" onAction="#U8customerComplaintBOA" prefHeight="41.0" prefWidth="147.0" text="Customer complaints" />
+      <Button layoutX="30.0" layoutY="124.0" mnemonicParsing="false" onAction="#U8tollRefundsBOA" prefHeight="41.0" prefWidth="147.0" text="Toll refunds" />
+      <Button layoutX="195.0" layoutY="80.0" mnemonicParsing="false" onAction="#U8lostReceiptsBOA" prefHeight="41.0" prefWidth="147.0" text="Lost Receipts" />
+      <Button layoutX="195.0" layoutY="125.0" mnemonicParsing="false" onAction="#U8vipVehiclesBOA" prefHeight="41.0" prefWidth="147.0" text="VIP Vehicles" />
+      <Button layoutX="397.0" layoutY="90.0" mnemonicParsing="false" onAction="#U8createReportBOA" prefHeight="61.0" prefWidth="149.0" text="Create Report" />
+      <Button layoutX="427.0" layoutY="293.0" mnemonicParsing="false" onAction="#U8customerProfileUpdateBOA" prefHeight="27.0" prefWidth="123.0" text="Update" />
+      <Button layoutX="427.0" layoutY="248.0" mnemonicParsing="false" onAction="#U8customerProfileRegisterBOA" prefHeight="28.0" prefWidth="123.0" text="Register " />
       <Label layoutX="417.0" layoutY="208.0" text="Customer profiles">
          <font>
             <Font size="18.0" />

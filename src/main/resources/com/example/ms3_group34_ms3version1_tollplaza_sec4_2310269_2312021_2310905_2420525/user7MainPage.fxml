@@ -19,14 +19,14 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button fx:id="U7suspeciousVehicleBOA" layoutX="277.0" layoutY="178.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Suspecious Vehicle" textAlignment="CENTER" wrapText="true" />
-      <Button fx:id="U7unauthorizedLaneAccessBOA" layoutX="42.0" layoutY="113.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Unauthorized lane access " textAlignment="CENTER" wrapText="true" />
-      <Button fx:id="U7emergencyBOA" layoutX="42.0" layoutY="315.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Emergency " />
-      <Button fx:id="U7blacklistedVehiclesBOA" layoutX="277.0" layoutY="246.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Blacklisted Vehicles" />
-      <Button fx:id="U7cctvBOA" layoutX="42.0" layoutY="178.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="CCTV" />
-      <Button fx:id="U7reportBOA" layoutX="425.0" layoutY="246.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Report" />
-      <Button fx:id="U7staffAccessBOA" layoutX="42.0" layoutY="246.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Staff Access " textAlignment="CENTER" wrapText="true" />
-      <Button fx:id="U7incidentReportBOA" layoutX="424.0" layoutY="177.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="131.0" text="Incident Report" />
+      <Button layoutX="277.0" layoutY="178.0" mnemonicParsing="false" onAction="#U7suspeciousVehicleBOA" prefHeight="57.0" prefWidth="131.0" text="Suspecious Vehicle" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="42.0" layoutY="113.0" mnemonicParsing="false" onAction="#U7unauthorizedLaneAccessBOA" prefHeight="57.0" prefWidth="131.0" text="Unauthorized lane access " textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="42.0" layoutY="315.0" mnemonicParsing="false" onAction="#U7emergencyBOA" prefHeight="57.0" prefWidth="131.0" text="Emergency " />
+      <Button layoutX="277.0" layoutY="246.0" mnemonicParsing="false" onAction="#U7blacklistedVehiclesBOA" prefHeight="57.0" prefWidth="131.0" text="Blacklisted Vehicles" />
+      <Button layoutX="42.0" layoutY="178.0" mnemonicParsing="false" onAction="#U7cctvBOA" prefHeight="57.0" prefWidth="131.0" text="CCTV" />
+      <Button layoutX="425.0" layoutY="246.0" mnemonicParsing="false" onAction="#U7reportBOA" prefHeight="57.0" prefWidth="131.0" text="Report" />
+      <Button layoutX="42.0" layoutY="246.0" mnemonicParsing="false" onAction="#U7staffAccessBOA" prefHeight="57.0" prefWidth="131.0" text="Staff Access " textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="424.0" layoutY="177.0" mnemonicParsing="false" onAction="#U7incidentReportBOA" prefHeight="57.0" prefWidth="131.0" text="Incident Report" />
       <Label layoutX="69.0" layoutY="67.0" text="Activity">
          <font>
             <Font size="24.0" />

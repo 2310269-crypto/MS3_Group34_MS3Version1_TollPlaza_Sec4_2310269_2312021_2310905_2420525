@@ -5,8 +5,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javafx.util.StringConverter;
 
 import java.net.URL;
@@ -202,7 +206,16 @@ public class u7manageBlacklistedVehiclesController {
 
         }
 
+    @FXML
+    public void backToMP1BOA(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user7MainPage.fxml"));
+        Scene scene = new Scene(loader.load());
 
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Main Page");
+        stage.show();
+    }
 
 
 
