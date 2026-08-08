@@ -15,7 +15,9 @@ public class Blacklist {
         this.reasons = reasons;
         this.vehicleLicense = vehicleLicense;
         this.vehicleType = vehicleType;
+        this.driverNumber = driverNumber;
     }
+
 
     public LocalDate getDateRegistered() {
         return dateRegistered;
