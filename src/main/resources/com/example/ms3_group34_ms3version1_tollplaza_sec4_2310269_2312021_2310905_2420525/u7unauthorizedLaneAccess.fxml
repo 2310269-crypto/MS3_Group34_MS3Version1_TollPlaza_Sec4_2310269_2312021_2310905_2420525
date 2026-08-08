@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.u7UnauthorizedLaneAccessController">
+   <children>
+      <Label layoutX="38.0" layoutY="28.0" text="Unauthorized Access Lane">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="86.0" text="Lane number: " />
+      <TextField fx:id="unauthorizedLaneNumberTF" layoutX="121.0" layoutY="84.0" />
+      <TextField fx:id="dateOfUnauthorizedLaneTF" layoutX="121.0" layoutY="116.0" promptText="YYYY-MM-DD" />
+      <Label layoutX="44.0" layoutY="120.0" text="Date" />
+   </children>
+</AnchorPane>
