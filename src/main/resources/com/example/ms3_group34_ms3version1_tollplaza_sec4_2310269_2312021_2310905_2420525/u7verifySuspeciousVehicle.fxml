@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.u7verifySuspeciousVehicleController">
+   <children>
+      <Label layoutX="51.0" layoutY="35.0" text="Verify suspecious Vehicle">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="108.0" text="Driver license number : " />
+      <Label layoutX="38.0" layoutY="194.0" text="Vehicle license Number : " />
+      <Label layoutX="38.0" layoutY="237.0" text="Vehicle Type : " />
+      <Label layoutX="38.0" layoutY="152.0" text="Driver name : " />
+      <TextField fx:id="driverLicenseNoTF" layoutX="164.0" layoutY="104.0" />
+      <TextField fx:id="driverNameTF" layoutX="112.0" layoutY="148.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="vehicleLicenseNoTF" layoutX="172.0" layoutY="187.0" />
+      <TextField fx:id="vehicleTypeTF" layoutX="113.0" layoutY="233.0" />
+      <Label fx:id="blacklistVehicleLabel" layoutX="416.0" layoutY="93.0" prefHeight="34.0" prefWidth="102.0" style="-fx-border-color: grey;" textAlignment="CENTER" />
+      <Label layoutX="416.0" layoutY="69.0" text="Blacklisted vehicle?" />
+   </children>
+</AnchorPane>

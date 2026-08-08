@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group34_ms3version1_tollplaza_sec4_2310269_2312021_2310905_2420525.u7CCTVController">
+   <children>
+      <Label layoutX="37.0" layoutY="36.0" text="Review CCTV">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="65.0" text="Lane Number :" />
+      <Label layoutX="307.0" layoutY="106.0" text="Camera Location :" />
+      <Label layoutX="50.0" layoutY="99.0" text="Date :" />
+      <DatePicker fx:id="datePickerCB" layoutX="95.0" layoutY="95.0" />
+      <ComboBox fx:id="laneNumberCB" layoutX="406.0" layoutY="61.0" prefWidth="150.0" />
+      <ComboBox fx:id="cameraLocationCB" layoutX="407.0" layoutY="102.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
